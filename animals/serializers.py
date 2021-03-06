@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from rest_polymorphic.serializers import PolymorphicSerializer
-from .models import Animal
+from .models import Animal, Cat
 
 
 class AnimalSerializer(serializers.ModelSerializer):
@@ -13,7 +13,16 @@ class AnimalSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class AnimalPolymorphicSerializer(PolymorphicSerializer):
+class CatSerializer(serializers.ModelSerializer):
+    owner_name = serializers.CharField()
+
+    class Meta:
+        model = Cat
+        fields = '__all__'
+
+
+class ProjectPolymorphicSerializer(PolymorphicSerializer):
     model_serializer_mapping = {
-        Animal: AnimalSerializer
+        Animal: AnimalSerializer,
+        Cat: CatSerializer
     }
