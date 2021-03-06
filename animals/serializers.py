@@ -29,9 +29,18 @@ class DogSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class CowSerializer(serializers.ModelSerializer):
+    farm_name = serializers.CharField()
+
+    class Meta:
+        model = Cow
+        fields = '__all__'
+
+
 class ProjectPolymorphicSerializer(PolymorphicSerializer):
     model_serializer_mapping = {
         Animal: AnimalSerializer,
         Cat: CatSerializer,
-        Dog: DogSerializer
+        Dog: DogSerializer,
+        Cow: CowSerializer
     }
