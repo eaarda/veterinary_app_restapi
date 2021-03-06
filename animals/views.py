@@ -1,14 +1,13 @@
 from django.shortcuts import render
-from rest_framework import generics
 from .models import Animal
 from .serializers import AnimalSerializer
-from rest_framework.decorators import api_view
+from rest_framework.views import APIView
 from rest_framework.response import Response
 
 
-class Animal_Objects(generics.ListCreateAPIView):
-    serializer_class = AnimalSerializer
+class Animal_Objects(APIView):
 
-    def get_queryset(self):
+    def get(self, request, format=None):
         queryset = Animal.objects.all()
-        return queryset
+        serializer_class = AnimalSerializer(queryset, many=True)
+        return Response(serializer_class.data)
