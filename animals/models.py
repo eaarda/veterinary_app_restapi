@@ -34,10 +34,10 @@ class Cow(Animal):
 
 
 class Appointment(models.Model):
-    name = models.ForeignKey(
-        'Animal', related_name='animals', on_delete=models.CASCADE)
+    animal_id = models.ForeignKey(
+        Animal, related_name='animals', on_delete=models.CASCADE)
     appointment_datetime = models.DateTimeField(null=True)
     description = models.CharField(max_length=500, null=True)
 
     def __str__(self):
-        return str(self.name)
+        return str(self.animal_id)

@@ -1,6 +1,6 @@
 from django.urls import path
 from rest_framework.urlpatterns import format_suffix_patterns
-from animals.views import AnimalViews, CatViews, DogViews, CowViews
+from animals.views import AnimalViews, CatViews, DogViews, CowViews, AppointmentViews
 
 
 urlpatterns = [
@@ -11,5 +11,6 @@ urlpatterns = [
     path('dogs/<int:pk>', DogViews.Dog_Detail.as_view()),
     path('cows/', CowViews.Cow_Objects.as_view()),
     path('cows/<int:pk>', CowViews.Cow_Detail.as_view()),
+    path('appointments/', AppointmentViews.Appointments.as_view()),
 ]
 urlpatterns = format_suffix_patterns(urlpatterns)  # generalize urls

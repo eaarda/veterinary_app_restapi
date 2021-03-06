@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from rest_polymorphic.serializers import PolymorphicSerializer
-from .models import Animal, Cat, Dog, Cow
+from .models import Animal, Cat, Dog, Cow, Appointment
 
 
 class AnimalSerializer(serializers.ModelSerializer):
@@ -44,3 +44,9 @@ class ProjectPolymorphicSerializer(PolymorphicSerializer):
         Dog: DogSerializer,
         Cow: CowSerializer
     }
+
+
+class AppointmentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Appointment
+        fields = '__all__'
