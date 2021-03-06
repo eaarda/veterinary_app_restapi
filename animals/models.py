@@ -9,28 +9,28 @@ class Animal(PolymorphicModel):
     updated_at = models.DateTimeField(null=True)
 
     def __str__(self):
-        return self.name, self.birthday, self.created_at, self.updated_at
+        return str(self.name)
 
 
 class Cat(Animal):
     owner_name = models.CharField(max_length=80)
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
 
 class Dog(Animal):
     owner_name = models.CharField(max_length=80)
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
 
 class Cow(Animal):
     farm_name = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
 
 class Appointment(models.Model):
