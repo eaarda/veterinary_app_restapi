@@ -32,3 +32,8 @@ class Appointment_Detail(APIView):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk, foramt=None):
+        appointment = Appointment.objects.get(pk=pk)
+        appointment.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
