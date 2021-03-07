@@ -11,3 +11,11 @@ class Animal_Objects(APIView):
         queryset = Animal.objects.all()
         serializer = AnimalSerializer(queryset, many=True)
         return Response(serializer.data)
+
+
+class Animal_Detail(APIView):
+
+    def get(self, request, pk, format=None):
+        animal = Animal.objects.get(pk=pk)
+        serializer = AnimalSerializer(animal)
+        return Response(serializer.data)

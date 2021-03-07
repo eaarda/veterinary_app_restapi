@@ -5,6 +5,7 @@ from animals.views import AnimalViews, CatViews, DogViews, CowViews, Appointment
 
 urlpatterns = [
     path('animals/', AnimalViews.Animal_Objects.as_view()),
+    path('animals/<int:pk>', AnimalViews.Animal_Detail.as_view()),
     path('cats/', CatViews.Cat_Objects.as_view()),
     path('cats/<int:pk>', CatViews.Cat_Detail.as_view()),
     path('dogs/', DogViews.Dog_Objects.as_view()),
