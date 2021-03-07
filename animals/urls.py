@@ -12,5 +12,6 @@ urlpatterns = [
     path('cows/', CowViews.Cow_Objects.as_view()),
     path('cows/<int:pk>', CowViews.Cow_Detail.as_view()),
     path('appointments/', AppointmentViews.Appointments.as_view()),
+    path('appointments/<int:pk>', AppointmentViews.Appointment_Detail.as_view()),
 ]
 urlpatterns = format_suffix_patterns(urlpatterns)  # generalize urls
