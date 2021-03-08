@@ -4,9 +4,6 @@ from .models import Animal, Cat, Dog, Cow, Appointment
 
 
 class AnimalSerializer(serializers.ModelSerializer):
-    name = serializers.CharField()
-    birthday = serializers.CharField()
-    updated_at = serializers.CharField()
 
     class Meta:
         model = Animal
@@ -14,7 +11,6 @@ class AnimalSerializer(serializers.ModelSerializer):
 
 
 class CatSerializer(serializers.ModelSerializer):
-    owner_name = serializers.CharField()
 
     class Meta:
         model = Cat
@@ -22,7 +18,6 @@ class CatSerializer(serializers.ModelSerializer):
 
 
 class DogSerializer(serializers.ModelSerializer):
-    owner_name = serializers.CharField()
 
     class Meta:
         model = Dog
@@ -30,7 +25,6 @@ class DogSerializer(serializers.ModelSerializer):
 
 
 class CowSerializer(serializers.ModelSerializer):
-    farm_name = serializers.CharField()
 
     class Meta:
         model = Cow
