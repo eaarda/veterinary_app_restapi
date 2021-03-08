@@ -51,6 +51,8 @@ A veterinary app for building an API using Django Rest Framework and Polymorphic
 | /appointment/<:id>/  | PUT  | UPDATE  | Update a appointment specified by id  |
 | /appointment/<:id>/  | DELETE  | DELETE  | Delete a appointment specified by id |
 
+https://documenter.getpostman.com/view/10306840/Tz5jg1pL
+
 
 
 
