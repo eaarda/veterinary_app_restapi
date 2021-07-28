@@ -1,4 +1,10 @@
 
+# Veterinary App REST API
+
+### Overview
+A veterinary app for building an API using Django Rest Framework.
+
+
 ## Installation
 
 - Create and activate a virtualenv
@@ -24,3 +30,10 @@
 ```bash
   $ python manage.py runserver
 ```
+
+
+## API Documentation
+
+[Postman Documentation](https://documenter.getpostman.com/view/10306840/Tz5jg1pL)
+
+  
