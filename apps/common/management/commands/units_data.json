@@ -1,0 +1,100 @@
+{
+    "data": [
+        {
+            "idUnit": 1,
+            "dsUnit": "Ad",
+            "dsUnitLong": "Adet",
+            "dtInsertDate": "2019-10-07T14:25:30.443",
+            "dtUpdateDate": "2019-10-07T14:25:30.443",
+            "idUserInsert": null,
+            "idUserUpdate": null,
+            "messages": null,
+            "messageList": [],
+            "dbStatus": 0
+        },
+        {
+            "idUnit": 2,
+            "dsUnit": "Kg",
+            "dsUnitLong": "Kilogram",
+            "dtInsertDate": "2019-10-15T00:00:00",
+            "dtUpdateDate": "2019-10-15T00:00:00",
+            "idUserInsert": null,
+            "idUserUpdate": null,
+            "messages": null,
+            "messageList": [],
+            "dbStatus": 0
+        },
+        {
+            "idUnit": 4,
+            "dsUnit": "Mililitre",
+            "dsUnitLong": "ml",
+            "dtInsertDate": "2019-10-15T00:00:00",
+            "dtUpdateDate": "2019-10-15T00:00:00",
+            "idUserInsert": null,
+            "idUserUpdate": null,
+            "messages": null,
+            "messageList": [],
+            "dbStatus": 0
+        },
+        {
+            "idUnit": 5,
+            "dsUnit": "Miligram",
+            "dsUnitLong": "mg",
+            "dtInsertDate": "2019-10-15T00:00:00",
+            "dtUpdateDate": "2019-10-15T00:00:00",
+            "idUserInsert": null,
+            "idUserUpdate": null,
+            "messages": null,
+            "messageList": [],
+            "dbStatus": 0
+        },
+        {
+            "idUnit": 6,
+            "dsUnit": "Kutu",
+            "dsUnitLong": "Kutu",
+            "dtInsertDate": "2019-10-15T00:00:00",
+            "dtUpdateDate": "2019-10-15T00:00:00",
+            "idUserInsert": null,
+            "idUserUpdate": null,
+            "messages": null,
+            "messageList": [],
+            "dbStatus": 0
+        },
+        {
+            "idUnit": 7,
+            "dsUnit": "Torba",
+            "dsUnitLong": "Torba",
+            "dtInsertDate": "2019-10-15T00:00:00",
+            "dtUpdateDate": "2019-10-15T00:00:00",
+            "idUserInsert": null,
+            "idUserUpdate": null,
+            "messages": null,
+            "messageList": [],
+            "dbStatus": 0
+        },
+        {
+            "idUnit": 8,
+            "dsUnit": "Şişe",
+            "dsUnitLong": "Şişe",
+            "dtInsertDate": "2019-10-15T00:00:00",
+            "dtUpdateDate": "2019-10-15T00:00:00",
+            "idUserInsert": null,
+            "idUserUpdate": null,
+            "messages": null,
+            "messageList": [],
+            "dbStatus": 0
+        },
+        {
+            "idUnit": 10,
+            "dsUnit": "Tablet",
+            "dsUnitLong": "Tablet",
+            "dtInsertDate": "2020-08-21T00:00:00",
+            "dtUpdateDate": "2020-08-21T00:00:00",
+            "idUserInsert": null,
+            "idUserUpdate": null,
+            "messages": null,
+            "messageList": [],
+            "dbStatus": 0
+        }
+    ]
+}

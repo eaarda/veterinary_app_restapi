@@ -30,3 +30,47 @@ class District(BaseModel):
 
     def __str__(self):
         return self.name
+
+
+class Color(BaseModel):
+
+    name = models.CharField(max_length=255)
+
+    class Meta:
+        db_table = 'colors'
+
+    def __str__(self):
+        return self.name
+
+
+class Specie(BaseModel):
+
+    name = models.CharField(max_length=255)
+
+    class Meta:
+        db_table = 'species'
+
+    def __str__(self):
+        return self.name
+
+
+class ProductType(BaseModel):
+
+    name = models.CharField(max_length=255)
+
+    class Meta:
+        db_table = 'product_types'
+
+    def __str__(self):
+        return self.name
+
+
+class Unit(BaseModel):
+
+    name = models.CharField(max_length=255)
+
+    class Meta:
+        db_table = 'units'
+
+    def __str__(self):
+        return self.name
